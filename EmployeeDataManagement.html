@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Data Mangement</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+       
+</head>
+
+<body>
+    <Header>
+        <div class="container rounded">
+            <div class="jumbotron bg-dark text-light text-center">
+                <h1 class="display-3">Employee Data Management</h1>
+                <p class="lead">A comprehensive Directory of Employee Billable hours</p>
+                <hr class="my-2">
+            </div>
+        </div>
+    </Header>
+    <br>
+    <Main>
+
+        <div class="container border rounded">
+            <div class="panel panel-default bg-primary text-white">Recently Filtered</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Role</th>
+                        <th>Start Date</th>
+                        <th>Months Worked</th>
+                        <th>Monthly Rate ($)</th>
+                        <th>Total Billed ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Dev</td>
+                        <td>2018</td>
+                        <td>June</td>
+                        <td>$20</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Dev</td>
+                        <td>2018</td>
+                        <td>June</td>
+                        <td>$20</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Dev</td>
+                        <td>2018</td>
+                        <td>June</td>
+                        <td>$20</td>
+                        <td>20000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mark</td>
+                        <td>Dev</td>
+                        <td>2018</td>
+                        <td>June</td>
+                        <td>$20</td>
+                        <td>20000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+    </Main>
+    <br>
+    <Footer>
+        <div class="container border rounded">
+                <div class="panel-heading bg-primary text-white">Recently Filtered</div>
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Employee Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Example input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Role</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Start Date</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input">
+                </div>
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Monthly Rate</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </Footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    // GLOBAL VARIABLE
+    
+    var table = {name:"Roger", role:"enginer", startDate:"3/14/2018", MonthlyRate:"$50", TotalBilles:"110000"};
+    
+    // Adding click event listen listener to all buttons
+    $("button").on("click", function() {
+        
+        updateTableObject()
+    });
+
+function updateTableObject(){
+    table.name = $("#formGroupExampleInput1").val().trim();
+    alert (table.name)
+}
+
+</script>
+</body>
+
+
+
+</html>
